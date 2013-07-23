@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Marketing website for Spring into Autumn">
 <meta name="author" content="Guy Newman">
-<link href='http://fonts.googleapis.com/css?family=Flamenco|Luckiest+Guy|Chewy' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Luckiest+Guy|Chewy" rel="stylesheet" type="text/css">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 <style>
@@ -19,6 +19,7 @@ body {
     padding-bottom: 40px;
     color: #5a5a5a;
     font-size: 18px;
+    font-family: "Chewy", cursive;
 }
 
     /* CUSTOMIZE THE NAVBAR
@@ -36,7 +37,7 @@ body {
 }
 
 .navbar-wrapper .navbar {
-    font-family: 'Chewy', cursive;
+    font-family: "Chewy", cursive;
 }
 
     /* Remove border and change up box shadow for more contrast */
@@ -50,7 +51,7 @@ body {
     /* Downsize the brand/project name a bit */
 .navbar .brand {
     padding: 22px 40px 16px; /* Increase vertical padding to match navbar links */
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     font-size: 24px;
     font-weight: bold;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
@@ -62,7 +63,7 @@ body {
 }
 
 .navbar .nav .nav-header {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     font-size: 16px;
 }
 
@@ -97,7 +98,6 @@ body {
 }
 
 .carousel-control {
-    font-family: 'Chewy', cursive;
     height: 80px;
     margin-top: 0;
     font-size: 120px;
@@ -128,11 +128,7 @@ body {
 }
 
 .carousel-caption h1 {
-    font-family: 'Luckiest Guy', cursive;
-}
-
-.carousel-caption .lead {
-    font-family: 'Chewy', cursive;
+    font-family: "Luckiest Guy", cursive;
 }
 
 .carousel-caption h1,
@@ -156,7 +152,7 @@ body {
 }
 
 .carousel-caption .btn {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     margin-top: 10px;
 }
 
@@ -168,18 +164,16 @@ body {
     text-align: center;
 }
 
-.marketing h2 {
+.marketing h2,
+.marketing h3,
+.marketing h4,
+.marketing .btn {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: normal;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .7);
 }
 
-.marketing h2,
-.marketing .btn {
-    font-family: 'Luckiest Guy', cursive;
-    font-weight: normal;
-}
-
 .marketing .span4 p {
-    font-family: 'Flamenco', cursive;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -192,15 +186,15 @@ body {
 }
 
 .feature {
-    padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+    padding-top: 0px; /* Vertically center images part 1: add padding above and below text. */
     overflow: hidden; /* Vertically center images part 2: clear their floats. */
 }
 
 .feature-image {
-    margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    margin-top: 0px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
 }
 
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    /* Give some space on the sides of the floated elements so text doesn"t run right into it. */
 .feature-image.pull-left {
     margin-right: 40px;
 }
@@ -210,28 +204,30 @@ body {
 }
 
     /* Thin out the marketing headings */
-.feature-heading {
-    font-size: 50px;
-    font-weight: 300;
+.feature h2,
+.feature h3,
+.feature h4 {
     line-height: 1;
     letter-spacing: -1px;
 }
 
-.feature .feature-heading {
-    font-family: 'Luckiest Guy', cursive;
+.feature h2 {
+    font-size: 50px;
     color: #BFE146;
 }
 
-.feature .muted {
+.feature h3 {
+    font-size: 40px;
     color: #FFE545;
 }
 
-.feature .lead {
-    font-family: 'Flamenco', cursive;
+.feature h4 {
+    font-size: 30px;
+    color: #FF5D00;
 }
 
-footer {
-    font-family: 'Flamenco', cursive;
+.feature p {
+    margin: 0 0 20px;
 }
 
 .spring {
@@ -279,7 +275,6 @@ footer {
     .feature-image.pull-right {
         display: block;
         float: none;
-        max-width: 40%;
         margin: 0 auto 20px;
     }
 }
@@ -326,10 +321,6 @@ footer {
         margin-top: 40px;
     }
 
-    .feature-heading {
-        font-size: 30px;
-    }
-
     .feature .lead {
         font-size: 18px;
         line-height: 1.5;
@@ -347,7 +338,7 @@ footer {
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-<link rel="shortcut icon" href="../assets/ico/favicon.png">
+<link rel="shortcut icon" href="ico/favicon.ico">
 </head>
 
 <body>
@@ -582,21 +573,23 @@ footer {
 
             <h2 class="spring">Our Services</h2>
 
-            <p>Landscape gardening, grounds maintenance and tree surgery.</p>
+            <p><a href="landscape-gardening">Landscape gardening</a>,
+                <a href="#grounds-maintenance">grounds maintenance</a> and
+                <a href="#tree-surgery">tree surgery</a>.</p>
         </div>
         <div class="span4">
             <img class="img-rounded" src="http://maps.googleapis.com/maps/api/staticmap?center=51.664464,-0.537643&zoom=9&size=280x140&scale=1&format=png&maptype=roadmap&sensor=false&key=AIzaSyBiXRVhd8PTCFbAXNjWPA3PmT6ranQ8AXo" alt="Area Map"/>
 
             <h2 class="summer">Our Location</h2>
 
-            <p>Based in Amersham, we work in and around north west London, Bucks, Berks and Herts.</p>
+            <p>We work in and around north west London, Bucks, Berks and Herts.</p>
         </div>
         <div class="span4">
             <img class="img-rounded" src="img/talking-on-cellphone.jpg">
 
             <h2 class="autumn">Contact Us</h2>
 
-            <p>Call us on <strong>07738 382994</strong> or email
+            <p>Call us on <span class="autumn">07738 382994</span> or email
                 <a href="mailto:enquiries@springintoautumn.co.uk">enquiries@springintoautumn.co.uk</a></p>
         </div>
     </div>
@@ -606,11 +599,238 @@ footer {
     <div class="feature">
         <img class="img-rounded feature-image pull-right" data-src="holder.js/512x512">
 
-        <h2 class="feature-heading">Landscape Gardening <span class="muted">Soft and Hard Landscaping</span></h2>
+        <h2>Landscape Gardening</h2>
 
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
+        <p>Our garden is an extension of our family living space, a place for relaxation, entertaining and enjoyment. There are many aspects to garden landscaping including paving, decking, walling and turfing.</p>
+
+        <h3>Patios</h3>
+
+        <p>We provide all types of patios in a variety of materials ranging from natural sandstone, concrete products to slate. We will design and construct your ideal patio to meet your individual requirements and create a design to your chosen size, shape and budget.
+            Introducing a patio to your garden provides a place to entertain or space to simply sit back and relax. Spring into Autumn create all types of patio using a vast choice of materials ranging from natural sandstone, slate to a large collection of concrete products.
+            Preparation is key to a long lasting patio and that is why all our paving is laid to exact specification*.
+            Your patio can be built to any shape or size to suit both your lifestyle and your garden space.
+            Make the most of small spaces by creating a compact patio area with a small table and chairs.
+            Split level patio areas are great for defining different areas in your garden.
+            Blend stone with aggregates to bring a mix of textures and colours.
+            Choose materials to compliment your property or create contrast for impact.
+            Please see some of our patio projects above for ideas and a variety of product ranges.</p>
+
+        <h3>Garden Paths</h3>
+
+        <p>Paths to connect your outdoor space or simply meandering to that favourite spot in the garden, we can create any design of path with a huge choice of materials to choose from including stone, gravel, timber, to grass…the choice is yours.
+            Paths are more than just a way of linking one place to another, pathways can be the heart and soul of a garden. Their installation gives direction to a space, defines its edges, leads the way to a focal point or simply makes access to all of the plantings much easier.
+            The materials used to create a path also lend a degree of personality to a garden from gravel crunching under foot to stone slabs giving a feeling of solidity.
+            We can create a design for you to suit your needs or bring your own garden ideas into creation.
+            For a little inspiration or ideas please see some of our Projects.</p>
+
+        <h3>Garden Walls</h3>
+
+        <p>Garden walls are created for many different purposes. We provide a full design and build service, professionally constructing long lasting walls in a choice of materials ranging from stone, brick, rendered to wooden sleepers.
+            Garden walls can help to define a garden's space and style. They can be formed for privacy, raised beds for planting, to retain an area of earth, to compliment a patio or simply to divide your garden.
+            There are many types of materials to choose from and these include:
+
+            <ul>
+                <li>Stone</li>
+                <li>Brick</li>
+                <li>Block</li>
+                <li>Rendered and harled</li>
+                <li>Timber</li>
+            </ul>
+
+            Copings and caps provide the finishing touches to your wall and are not only decorative features but also guide water away from the top of the wall.  There are lots of different styles and colours to choose from.
+            Good design and construction is vital to a long lasting and stable wall which is why all of our structures are competently built to specification*.
+            Our team will listen to your ideas, working with you to create the perfect design and then our team of professionals will bring your project into fruition.</p>
+
+        <h3>Garden Steps</h3>
+
+        <p>We design and construct steps to suits all needs and budgets in a range of materials including stone, brick & timber. Whether you are looking to incorporate steps into a new garden landscape or creating steps to the entrance of your property we can provide the perfect solution.
+            There are many reasons why you might choose to introduce steps to your garden, for example when re-designing and landscaping your garden or simply creating steps to connect the outdoors to the indoors of your home.
+            Many shapes and looks can be created depending on where the steps are to be located, providing practicality with attractiveness and personality.
+
+            <ul>
+                <li>A beautiful stairway leading through a terraced garden.</li>
+                <li>A grand entrance to compliment your property.</li>
+                <li>A simple set of steps connecting the conservatory to your decking.</li>
+            </ul>
+
+            There are so many different types of materials to choose from to form your steps, these include:
+
+            <ul>
+                <li>Stone</li>
+                <li>Brick</li>
+                <li>Paving slabs</li>
+                <li>Block paving</li>
+                <li>Timber</li>
+            </ul>
+
+            As with all our services, we will happily discuss your requirements and draw up a design to suit your needs.  All our steps are constructed to specification*, providing a safe and long lasting platform for many years.</p>
+
+        <h3>Driveways</h3>
+
+        <p>Driveways come in all shapes and sizes and we can work with you to form the perfect design and frontage to your property to suit both your needs and budget. So whether it’s mono block paving, gravel or a mix of both there are loads to choose from to create your ideal driveway.
+            A well installed driveway will not only transform your home but will add market value to your property. We design and install all types of driveways, with a vast choice of different materials and colours to suit your needs.
+            Mono block is a popular and decorative paving that is not only attractive but practical, hard wearing and easy to clean. There are many types of block paving and colours available and we can guide you in making the right choice.
+            Edgings are not only an essential part of any driveway, they can also add that finishing touch with a style to suit every driveway with a large selection of edgings to choose from in a variety of shapes, sizes and colours.
+            Adding a circle or octant provides a centre piece to your driveway and will truly enhance the appearance of any property.
+            Gravel driveways are also popular or opt for a mix of paving and gravel with a huge choice of textures and colours to choose from.
+            Preparation is key to creating a long lasting driveway and our expert team will ensure the ground is prepared to exact specification ensuring many years of use and good looks.</p>
+
+        <h3>Edgings</h3>
+
+        <p>Edgings can be used for many purposes, whether it's to stabilise a block driveway or to form a neat edge to a path, we have many shapes, colours and types to choose from to suit your needs.
+            Edgings can be used for many reasons and needs, from practicality to simple aesthetics.
+            There are many different shapes, colours and types of edging to choose from in a range of materials including:-
+
+            <ul>
+                <li>Concrete</li>
+                <li>Stone</li>
+                <li>Timber</li>
+            </ul>
+
+            Edgings are most commonly used to:
+
+            <ul>
+                <li>Contain and stabilise a block driveway</li>
+                <li>Provide a neat edge to a patio</li>
+                <li>Keep gravel in place when laying between lawn or paving</li>
+                <li>Create a feature border</li>
+            </ul>
+        </p>
+
+        <h3>Garden Decking</h3>
+
+        <p>Timber decking brings a natural feel to the garden. There’s a large choice of decking to choose from including softwood, hardwood and slip resistant decking. All our decks are designed and professionally built to spec ensuring a beautiful long lasting structure.
+            Timber decking is a warm and natural solution offering a beautiful extension to your home and enhancing any garden.
+            There are many types of garden decking on the market which include:
+
+            <ul>
+                <li>Softwood decking</li>
+                <li>Hardwood decking</li>
+                <li>Slip resistant decking</li>
+            </ul>
+
+            Whether you choose decking on it’s own, or to compliment a paved or turfed area, your garden deck can be built in any shape or size whether it’s raised or flat, geometrical or curved, single or multi-levels …the choice is yours.
+            Balustrades provide a safe surround to your deck without any compromise to the look, whether it’s timber, steel, aluminium or metal, with glass panels or traditional wooden spindles, it will really give your garden deck personality.
+            To ensure your deck structure provides years of trouble free life it needs careful planning and design along with good quality materials and workmanship. All of our garden decks are built to last, constructed to specification* and only using high quality pressure treated timber.
+            Introducing decking lighting really can add the finishing touches to your deck with subtly toned lights or striking colours with motion effects.</p>
+
+        <h3>Fencing & Gates</h3>
+
+        <p>We provide all types of garden fencing including palisade fencing, panel/deco fencing, ranch fencing and trellis fencing, with gates to match your chosen design. Using only quality materials and expertly constructed by our team of professionals.
+            Garden fencing serves many purposes, from defining boundaries, decoration to privacy. Whether it's a simple palisade fence, stylish wavy panels or that contemporary look, we offer a large choice of garden fencing to suit your needs.
+            All of our fencing is constructed to the highest standard, expertly prepared and using quality materials. We only use pressure treated timber and all fence posts are firmly concreted into the ground, providing you with a strong quality fence which will last for many years to come.
+            Our fencing collection includes:-
+
+            <ul>
+                <li>Panel/Deco Fencing</li>
+                <li>Palisade Fencing</li>
+                <li>Trellis Fencing</li>
+                <li>Ranch Fencing</li>
+                <li>Picket Fencing</li>
+                <li>Post and Wire Fencing</li>
+            </ul>
+
+            We also install gates to match all types of fencing and gates ranging from timber, metal to wrought iron.</p>
+
+        <h3>Gravelling</h3>
+
+        <p>We offer a huge choice of decorative gravels to meet with a variety of needs including easy maintenance borders, gravel paths and driveways or for simple decoration. From beautiful rose quartz to plum crushed slate the choices are endless.
+            Whether using gravel for decoration, easy maintenance borders, paths or a driveway, gravel proves a popular choice today.
+            There is so much choice in a variety of textures and colours, the range of decorative gravels on the market is endless, choose to tie in with your property and surroundings or create a real contrast.
+
+            <ul>
+                <li>Use crushed slate or granite and plant a mix of grasses to create an easy maintenance garden space</li>
+                <li>Paving can be used to break up gravel and creates an attractive contrast</li>
+                <li>Tie in a paving circle with gravel inlays providing an interesting feature with a mix of textures and colour</li>
+            </ul>
+
+            When preparing for laying gravel we always grade and level the area and lay a membrane to keep weeds at bay. Gravel is then carefully laid to the specified depth*.
+            We are happy to offer advice and ideas and will provide samples, helping you to make the right choice. </p>
+
+        <h3>Bark</h3>
+
+        <p>Laying bark in plant borders contributes to an easier maintenance garden, offering both practicality and good looks. Play bark is also a great choice for play areas, providing a safe user friendly surface for children.
+            Bark continues to be popular in gardens, most commonly in borders to inhibit weed development reducing ongoing maintenance. It is also used to create path ways and to create decorative edges to driveways or paths.
+            Play bark is ideal for children’s play areas, providing a safe surface beneath swings and other play equipment.</p>
+
+        <h3>Turfing & Grass Seed</h3>
+
+        <p>Full preparation and grading is what our skilled team will do prior to carefully laying your turf. Leaving you with a lush lawn, providing that colourful finish to your garden.
+            A well laid lawn offers many benefits, whether it forms a colourful centre piece to the whole garden, somewhere to lie and relax or a safe play ground for your children.
+            Laying a new lawn or sowing grass seed requires some careful preparation ensuring a level and graded platform for your new turf or grass seed. Our team of professionals will prepare and carefully lay turf or sow grass seed providing you with a great looking and hardwearing lawn.
+            Ongoing care is vital to the success of your new lawn and we would recommend that newly laid turf should not be cut until the turf roots have knitted into the soil. Initial mowing of new lawns should be light, never cut grass too short as this can damage the grass plant, “little and often” is best. Regular mowing, feeding and weeding will ensure your lawn remains in top condition.
+            Spring into Autumn provide local grass cutting services within approximately 15 miles of Perth</p>
+
+        <h3>Garden Features</h3>
+
+        <p>Why not introduce a feature to your garden, this can add interest or simply create a variation to your existing garden design. Whether it’s a water feature, a summer house or a quiet seat in the garden there are many features to choose from.
+            Garden features can enhance the most basic of gardens; how about introducing a terrace or patio in a quiet area of your garden for winding down in after a busy day? Or perhaps you'd like to introduce a scented border or build an architectural scheme out of your favourite plants.
+            Spring into Autumn can advise on and help bring your garden feature ideas to life. With over 15 years experience we know what will suit and what will work well in your garden. </p>
+
+        <h3>Raised Planters</h3>
+
+        <p>We design and construct a range of planters to suit individual requirements which includes “grow your own” or for showing off your perennials. There are a variety of materials to choose from ranging from timber, brick to stone.
+            Raised planters are becoming a staple in the garden, whether to accommodate “growing your own” vegetables and fruit or simply making it easier to tend to your plants and flowers in raised beds.
+            We will carefully plan your requirements into your existing garden design, taking into account space, light and shelter.
+            We design and construct raised planters in a variety of materials including timber, stone and brick, to suit your chosen style and space in the garden.</p>
+
+        <h3>Seat in the Garden</h3>
+
+        <p>No more dragging the chairs from the shed when the sun decides to make an appearance…we can design and build the perfect seat in the garden, offering a practical, attractive and permanent solution!
+            Incorporating a seat into your patio adds a bit of interest also providing a “wee somewhere” to sit or why not build your own hideaway in a quiet spot of your garden creating that special place for you.
+            Keep it simple or add colour, contrast and fragrance by introducing a beautiful planting scheme to compliment your new space.</p>
+
+        <h3>Garden Ponds & Water Features</h3>
+
+        <p>Why not bring the element of water to your garden? With so many ponds and water features to choose from, ranging from more traditional styles to bold and contemporary, we can introduce that special feature to your garden.
+            Nothing can quite transform a garden like a pond or water feature. Whether it’s a quiet pond or a dramatic water fall, water works its magic in any garden and can provide a real focal point.
+            You will be spoiled for choice as there are so many different types of water feature to choose from.
+            Why not browse through some of our projects, come and share your ideas with us and we will help to bring the element of water into your garden.</p>
+
+        <h3>Pergolas, Arbours & Arches</h3>
+
+        <p>We supply and construct a range of pergolas, arbours and arches available in an extensive range of materials, designs and finishes…offering an interesting and stylish addition to your garden space.
+            Arches are a versatile way of introducing height and interest to your garden. Used as an elegant gateway, to link one area of the garden to another or as a beautiful frame to an urn, fountain or statue. They can also provide decorative support for climbing plants such as clematis, honeysuckle and roses.
+            Pergolas create a distinctive focal point to the garden reflecting your individual style. They are a very popular choice today and are ideally suited for linking different parts of the garden. Their open aspect makes them particularly effective in smaller gardens where more solid shapes like walls or fences can make the space feel more cluttered.
+            An arbour is an open structure and normally encloses a seat. Arbours can make romantic focal points in a quiet spot of the garden or the meeting point of two paths. They are an ideal solution in creating that perfect secluded spot to sit quietly and relax.
+            We can provide arches, pergolas and arbours to suit all tastes, available in an extensive range of materials, styles and finishes.</p>
+
+        <h3>Summer Houses and Sheds</h3>
+
+        <p>We provide a variety of summer houses and sheds to suit all garden spaces, styles and budgets. More importantly, we will produce a solid level base to place your summer house or shed, ensuring your investment is secure.
+            A summer house is a lovely addition to the garden, not only does it present a wonderful focal point but also offers a sheltered spot to sit, relax and enjoy the view of your garden.
+            A summer house will also allow you to enjoy your garden in the cooler months when it would simply be too cold to sit outdoors.
+            If you are looking for garden storage, a place to work or additional space, garden sheds could be the solution.
+            There are many different types of summer houses and sheds available to suit individual requirements, tastes and budget.
+            Once you have chosen your summer house or shed we will create a safe and level base for this to be positioned on* providing many years of life to your investment.</p>
+
+        <h3>Garden Lighting</h3>
+
+        <p>Why not add those finishing touches to your garden by introducing garden lighting? Whether considering a new landscaping project or enhancing your existing garden, garden lighting will promote the enjoyment of your garden all year round.
+            Make the most of your garden with well placed outdoor lighting and enjoy your garden all year round.
+            Whether highlighting favourite features in your garden, illuminating pathways and entrances, or simply to brighten up outside entertainment areas there are many types and styles of lighting to choose from.
+            If you are considering a landscaping project it is always worth thinking about introducing lighting, our team can bury cables safely according to your choice of design and requirements rather than disrupt your garden later.  Garden lighting really can add the finishing touch to your project.</p>
+
+        <h3>Garden Planting Services</h3>
+
+        <p>Well designed and chosen planting can really add those finishing touches or wow factor to your garden. Every garden is different so dependent on the light and shade in your garden and soil type, this will assist in choosing the most appropriate types of plants and planting layout.
+            It’s important that you take time to think about what you would like to create, you might consider:
+
+            <ul>
+                <li>Wildlife Garden – this might include planting nectar rich flowers or berry producing shrubs which will enhance the opportunities for wildlife with a mixture of textures, colours, and structure.</li>
+                <li>Easier Maintenance – choosing plants that are easier to keep and don’t require too much attention.</li>
+                <li>Water Garden – bringing the element of water to the garden along with a mixture of water plants.</li>
+                <li>Scented Garden – offering a fragrant mix of coloured and scented plants and flowers.</li>
+            </ul>
+        </p>
+
+        <h3>Sensory Gardens</h3>
+
+        <p>Any garden we design, by its sheer nature, should excite and indulge our senses; the difference with a sensory garden is that it is specifically designed to personally engage the senses of the occupants that use it.
+            Sensory gardens should be communally enjoyed by all but should also provide an individual experience for each and every visitor. These gardens are prevalently used as havens for individuals with impaired senses or those with physical or mental disabilities. They are also commonly designed to aid the mental development of children. Sensory gardens can be calming, exciting, entertaining and surprising and are increasingly used as an alternative form of therapy for people with a variety of heath complications.
+            Whether you are designing a sensory garden from scratch, or redeveloping an existing garden to be more sensory-rich, Spring into Autumn can support and enrich your experience. We have the knowledge to help you develop and design a sensory garden that is suited to your needs and exceeds your expectations of what a garden traditionally should and can offer.
+            Here at Spring into Autumn we're devoted to providing you with a unique and personalised experience. In order to do that we’re delighted to offer you as much useful information on sensory gardens as we possibly can so that you are efficiently informed when you are ready to start designing your sensory garden.</p>
+
     </div>
 
     <hr class="feature-divider">
@@ -618,11 +838,98 @@ footer {
     <div class="feature">
         <img class="img-rounded feature-image pull-left" data-src="holder.js/512x512">
 
-        <h2 class="feature-heading">Tree Surgery <span class="muted">Inpections, Tree Felling, Pruning and Stump Removal</span></h2>
+        <h2>Tree Surgery</h2>
 
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
+        <p>Spring into Autumn are well established, professional and nationally accredited Tree Surgeons. We are able to offer a range of services including:- Pruning, Crown lifting, Thinning, Cleaning, Reductions and Reshaping, Tree Removal and Reductions, Hedge Trimming, Pollarding, Dead Wooding, Stump Removal, Precision Felling, Site Clearance, Pesticide Application, Estate Grounds Management, Tree Replanting, Decay Investigation, Picus Tests, Tree Surveys, Logs, Weed Treatment and offer an Emergency Tree Surgery Service. We can also assist in Tree Preservation Order and Conservation Area Applications for Tree works with Local Authorities. From a single tree or hedge to a complete forest plantation, our fully skilled & insured team can solve any tree care problem you may have in a swift & professional manner – at prices which are sure to please you</p>
+
+        <p>Our Hedge Maintenance & Tree Surgery Services include:
+
+            <ul>
+                <li>Tree Felling</li>
+                <li>Pollarding</li>
+                <li>Sectional Felling</li>
+                <li>Dead Wooding</li>
+                <li>Crown Reduction</li>
+                <li>Crown Thinning</li>
+                <li>Crown Lifting</li>
+                <li>Formative Pruning</li>
+                <li>Stump Removal</li>
+            </ul>
+        </p>
+
+        <p>Trees are generally cut down and removed for one of the following reasons:
+
+            <ul>
+                <li>Storm Damage – Excessive Growth – Disease</li>
+                <li>Split Trunks – Problematic Roots</li>
+                <li>Damage to services/foundations & pathways</li>
+            </ul>
+        </p>
+
+        <p>But if at all possible we consider alternative methods of tree conservation and we will propose alternatives such as:
+
+            <ul>
+                <li>Formative Pruning – Crown Reduction</li>
+                <li>Crown Lifting – Pollarding</li>
+            </ul>
+        </p>
+
+        <p>All of our work is fully insured and we have £5,000,000 cover for personal, property and public liability. We strictly adhere to all work and legal requirements. All certification and insurance available for perusal including:
+
+            <ul>
+                <li>NPTC qualified to CS39 (use of chainsaws from rope and harness)</li>
+                <li>HSE compliant ( Forestry and arboriculture )</li>
+                <li>Arboriculture and Forestry Advisory Group (AFAG)</li>
+                <li>Work at Height Regulations 2005</li>
+                <li>LOLER (Lifting Operations and Lifting Equipment Regulations 1998)</li>
+                <li>PUWER (the Provision and Use of Work Equipment Regulations 1998)</li>
+                <li>CSCS qualified to work on construction sites</li>
+                <li>Full risk assessment and method statements.</li>
+                <li>First aid at work qualification.</li>
+                <li>Qualified to use woodchippers and ground clearance tools</li>
+            </ul>
+        </p>
+
+        <p>A mixture of these remedial tree services could resolve your problem and allow the tree to flourish and restore itself to its former glory.
+            We aim to give complete customer satisfaction and will always offer the most cost effective and conservation friendly advice</p>
+
+        <p>We offer a complimentary on site advisory service where we will recommend any works deemed necessary and can organise planning applications for any protected trees. We carry out all works to the highest possible standards using the most up to date techniques and machinery.
+            Our teams are highly skilled and take pride in their work to ensure professionalism and customer satisfaction. All our staff are fully qualified with the National Proficiency Test Council (NPTC) and have many years experience.
+            As an Arboriculture Association Approved Contractor, we are also CHAS & SAFE approved and our staff are CRB checked who also hold CSCS cards. We hold £10 million Public & Employers Liability Insurance with AXA.
+            We can provide detailed risk assessments, method statements, work at height permits and would be pleased to send copies of our Health and Safety policies on request.
+            We are able to offer the following services
+
+            <ul>
+                <li>Formative Pruning</li>
+                <li>Crown lifting</li>
+                <li>Thinning</li>
+                <li>Crown Cleaning</li>
+                <li>Crown reduction and reshaping</li>
+                <li>Tree removal</li>
+                <li>Hedge Trimming</li>
+                <li>Pollarding</li>
+                <li>Stump Grinding</li>
+                <li>Cabling & Bracing</li>
+                <li>Storm Damage</li>
+                <li>Precision Felling</li>
+                <li>Site Clearance</li>
+                <li>Scrub Clearance including Pesticide Application</li>
+                <li>Estate Grounds Management</li>
+                <li>Decay Investigation</li>
+                <li>Wood Chippings</li>
+                <li>Mulching</li>
+                <li>Tree Surveys</li>
+                <li>TPO & Conservation Applications including planning liaison with Tree Officers</li>
+                <li>Emergency Tree Work services</li>
+                <li>Gritting & Ice Clearance</li>
+                <li>Logs</li>
+                <li>Agricultural Services</li>
+                <li>Weed Treatment.</li>
+            </ul>
+
+            If you would like to discuss your requirements in detail, please do not hesitate to contact us.
+            All felling and pruning operations are carried out in accordance with BS3998:2010, including the Arboriculture and Forestry Advisory group (AFAG) All staff hold NPTC certificates.</p>
+
     </div>
 
     <hr class="feature-divider">
@@ -630,20 +937,56 @@ footer {
     <div class="feature">
         <img class="img-rounded feature-image pull-right" data-src="holder.js/512x512">
 
-        <h2 class="feature-heading">Grounds Maintenance <span
-                class="muted">Private Gardens and Commercial Grounds</span></h2>
+        <h2>Grounds Maintenance</h2>
 
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
+        <h3>Garden Maintenance</h3>
+
+        <p>Beautiful lawns, planted borders and structured hedges really enhance your garden, however finding the time to maintain the garden can be challenging with busy lives and the our desire to spend more quality time with family and friends.
+            Gardening isn't just what we do, it's who we are. Everyone in our gardening team has a green fingered passion and so we understand that sometimes it's difficult to stay on top of your garden maintenance.
+            Our gardeners have a wealth of experience with gardening problems and can help you get your garden into tip top shape, leaving you to enjoy your garden once again.</p>
+
+        <h3>Garden Tidies</h3>
+
+        <p>A spring tidy or autumn tidy can really set your garden up for the season ahead. We provide various services to suit all needs which include one-off seasonal garden tidies or ongoing regular tidies.
+            A well-pruned shrub gives that worthwhile return on your investment, flowering at the right time and providing years of enjoyment.  Whether it’s pruning or staying on track with the weeding our gardening team can help.
+            Our services include:-
+
+            <ul>
+                <li>Weeding</li>
+                <li>Digging over borders</li>
+                <li>Shrub pruning</li>
+                <li>Tree pruning</li>
+                <li>Removing debris</li>
+                <li>Weed killing hard standing areas</li>
+                <li>Leaf blowing</li>
+            </ul>
+
+            So, whether you are looking for a one off garden tidy in Spring or Autumn, or you require regular garden tidies to help keep on top of the garden we can provide a service to suit your needs.</p>
+
+        <h3>Hedge Cutting</h3>
+
+        <p>Our trained team of gardeners will competently cut your hedges into shape, providing a neat finish to your chosen height, be the envy of your street.
+            A well cut hedge really will set off your garden, providing height, structure and attractive screening around the garden.  Hedges will also attract many species of wildlife, especially birds to your garden.
+            If hedges are not cut regularly they can become bushy and misshapen so it’s important to give them an annual cut.
+            We generally carry out various hedge cutting from late July till early December.
+            Why not include a hedge cut as part of your regular garden maintenance programme?</p>
+
+        <h3>Local Maintenance Programme</h3>
+
+        <p>Too busy or don’t like certain jobs in the garden? We provide a local garden maintenance programme within approximately 15 miles of Perth, you choose which jobs need doing and spread the cost over the year. Includes grass cutting, weeding, pruning, hedge cutting and more.
+            We all love to spend time enjoying the garden but possessing the green fingers or acquiring the time to get all the gardening jobs done can be a challenge.
+            We offer a local garden maintenance programme, this service is offered within a 15 mile radius of Perth and includes regular grass cutting, weeding borders, cutting hedges, pruning, weed killing and lots more.
+            The garden maintenance programme is very simple, you choose the jobs you need doing, we’ll collate a programme providing you with a calendar to keep track of the visits across the season, and you get to spread the cost over the year.
+            It’s all about choice…so you decide how you want to spend your time and let us do the hard work!</p>
+
     </div>
 
     <hr class="feature-divider">
 
-    <footer>
+    <footer class="muted">
         <p class="pull-right"><a href="#">Back to top</a></p>
 
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2013 Spring into Autumn &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
 
 </div>
@@ -654,7 +997,7 @@ footer {
 <script>
     !function ($) {
         $(function () {
-            $('#myCarousel').carousel()
+            $("#myCarousel").carousel()
         })
     }(window.jQuery)
 </script>
